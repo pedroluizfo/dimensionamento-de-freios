@@ -22,7 +22,7 @@ while c != 'N':
 print(Df)
 continuar = str(input('Deseja salvar o arquivo?[S] ou [N] ')).capitalize()
 if continuar == 'S':
-    pasta='./pasta'
+    pasta = './pasta'
     cont = 1
     for diretorio, subpastas, arquivos in os.walk(pasta):
         for arquivo in arquivos:
@@ -39,7 +39,7 @@ print('graficos')
 
 
 
-df_novo= pd.read_excel(f'pasta\dados de frenagem {cont}.xlsx')
+df_novo = pd.read_excel(f'pasta\dados de frenagem {cont}.xlsx')
 print(df_novo)
 
 
